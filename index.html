@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotação financeira</title>
     <link rel="stylesheet" href="./estilos/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <h1>Financeiro</h1>
+    <h1>💵 Financeiro</h1>
+    <div class ="search-box">
+        <input type="text" id="titulo" placeholder="Sigla da moeda/bolsa" required>
+        <button onclick="buscarFinanceiro()">Buscar título</button>
+    </div>
+    <div id ="return-actions"></div>
+    <hr>
+
+    <script src="./javascript/javascript.js"></script>
 </body>
 </html>
