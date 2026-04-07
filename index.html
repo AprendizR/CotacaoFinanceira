@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotação financeira</title>
+    <title>Cotação Financeira</title>
     <link rel="stylesheet" href="./estilos/style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <h1>💵 Financeiro</h1>
-    <div class ="search-box">
-        <input type="text" id="titulo" placeholder="Sigla da moeda/bolsa" required>
-        <button onclick="buscarFinanceiro()">Buscar título</button>
+    <h1>💵 Cotação Financeira</h1>
+
+    <div class="search-box">
+        <input type="text" id="titulo" placeholder="Ex: USD, EUR, IBOVESPA.">
+        <button onclick="buscarFinanceiro()">Buscar</button>
     </div>
-    <div id ="return-actions"></div>
+
+    <div id="return-actions"></div>
     <hr>
+
+    <h2>📋 Histórico de Consultas</h2>
+
+    <button id="btn-limpar" onclick="limparHistorico()">🗑️ Limpar tudo</button>
+
+    <table id="tabela-historico">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+                <th>Variação</th>
+                <th>Data</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-historico">
+            <tr id="linha-vazia">
+                <td colspan="7">Nenhuma consulta realizada ainda.</td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="./javascript/javascript.js"></script>
 </body>

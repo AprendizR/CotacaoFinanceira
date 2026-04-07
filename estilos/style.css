@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 80%;
+    margin: auto;
+    padding: 24px;
+    background-color: rgb(115, 247, 115);
+}
+
+h1, h2{
+    margin: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+.card {
+    background-color: rgb(96, 250, 96);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(96, 250, 96);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#btn-limpar {
+    padding: 8px 16px;
+    background-color: #fc5565;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#btn-limpar:hover {
+    background-color: #a71d2a;
+}
+
+.btn-excluir {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background-color: #a71d2a;
+}
