@@ -18,7 +18,7 @@ async function buscarFinanceiro() {
 
     try {
         const url = new URL('/finance', 'https://api.hgbrasil.com');
-        url.searchParams.set('key', '9b6f1e7a');
+        url.searchParams.set('key', 'fce6a8a1');
         url.searchParams.set('format', 'json-cors');
 
         const response = await fetch(url.href);
