@@ -10,7 +10,7 @@ async function buscarFinanceiro() {
     if (!titulo) {
         Swal.fire({
             title: 'Campo obrigatório',
-            text: 'Digite uma sigla. Ex: USD, EUR, IBOVESPA, blockchain_info',
+            text: 'Digite uma sigla. Ex: USD, EUR, IBOVESPA',
             icon: 'warning'
         });
         return;
@@ -54,8 +54,7 @@ async function buscarFinanceiro() {
                 title: 'Não encontrado',
                 html: `"<b>${titulo}</b>" não está disponível.<br><br>
                        <b>Moedas:</b> USD, EUR, GBP, BTC, ARS, CAD, AUD, JPY, CNY<br>
-                       <b>Bolsas:</b> IBOVESPA, IFIX, NASDAQ, DOWJONES, CAC, NIKKEI<br>
-                       <b>Crypto:</b> blockchain_info, bitstamp, foxbit, mercadobitcoin`,
+                       <b>Bolsas:</b> IBOVESPA, IFIX, NASDAQ, DOWJONES, CAC, NIKKEI<br>`,
                 icon: 'info'
             });
             return;
